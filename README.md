@@ -40,6 +40,12 @@ docker run -it --rm --name backend  -w /app -v $(pwd):/app -p 3000:3000 typescri
 In order to test that the project is running ok, you'll need to open the next url in the browser.
 
 ### 5.1 Open in the Browser the next url.
-  ```
-  http://localhost:3000
-  ```  
+```
+http://localhost:3000
+```  
+
+## 6. Documentation.
+If you want to create the documentation for all the project code, please just type the next command.
+```
+docker run -it --rm --name backend  -w /app -v $(pwd):/app -p 3000:3000 typescript-backend:8.9.1 typedoc --out doc/ src/ --module commonjs
+```
