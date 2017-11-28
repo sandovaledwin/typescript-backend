@@ -33,7 +33,7 @@ docker run -it --rm --name backend  -w /app -v $(pwd):/app -p 3000:3000 typescri
 
 ## 4. Running the project.
 ```
-docker run -it --rm --name backend  -w /app -v $(pwd):/app -p 3000:3000 typescript-backend:8.9.1 ts-node app.ts
+docker run -it --rm --name backend  -w /app -v $(pwd):/app -p 3000:3000 typescript-backend:8.9.1 npm run start
 ```
 
 ## 5. Testing the project.
